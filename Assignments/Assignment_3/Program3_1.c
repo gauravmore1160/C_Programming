@@ -14,15 +14,7 @@ int Printeven(int iNo1)
     {
         printf("The number is invalid");
     }
-
-
-
-
-
-
-
-    
-
+   
     for(int iCnt=1,iMul=0;iCnt<=iNo1;iCnt++)
     {
         iMul=iCnt*2;
