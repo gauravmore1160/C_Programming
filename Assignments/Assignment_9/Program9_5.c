@@ -1,4 +1,13 @@
-
+///////////////////////////////////////////////////////////////////
+//
+//  Function Name : DiffFactorial
+//  Description   : Accepts a number and returns the difference between even and odd factorial
+//  Input         : Integer
+//  Output        : Integer
+//  Author        : Gaurav More
+//  Date          : 02/11/2026
+//
+///////////////////////////////////////////////////////////////////
 #include<stdio.h>
 #include<stdlib.h>
 
