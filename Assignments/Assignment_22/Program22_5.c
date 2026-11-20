@@ -1,3 +1,14 @@
+///////////////////////////////////////////////////////////////////
+//
+//  Function Name : Pattern
+//  Description   : Accepts a number and prints that many positive even numbers starting from 2[cite: 76]
+//  Input         : Integer (iNo)[cite: 76]
+//  Output        : Pattern printed on console[cite: 76]
+//  Author        : Gaurav More
+//  Date          : 19/11/2026
+//
+///////////////////////////////////////////////////////////////////
+
 #include<stdio.h>
 #include<stdlib.h>
 
