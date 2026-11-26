@@ -1,11 +1,11 @@
 ///////////////////////////////////////////////////////////////////
 //
-//  Function Name : ChkChar
-//  Description   : Accepts a string and a character and checks whether the character is present in the string
-//  Input         : String (char *), Character (char)
-//  Output        : bool (1 / true if present, 0 / false otherwise, -1 for NULL pointer)
+//  Function Name : ChkAlpha
+//  Description   : Accepts a character and checks whether it is an alphabet (A-Z or a-z)
+//  Input         : Character (char)
+//  Output        : bool (1 / true if alphabet, 0 / false otherwise, -1 for space)
 //  Author        : Gaurav More
-//  Date          : 20/11/2026
+//  Date          : 26/11/2026
 //
 ///////////////////////////////////////////////////////////////////
 
@@ -16,47 +16,41 @@ typedef int bool;
 #define true 1
 #define false 0
 
-bool ChkChar(char *str,char ch)
+bool ChkAlpha(char ch)
 {
-    int iCount=0;
-    if (str==NULL)
+     
+    if (ch==' ')
     {
        return -1;
     }
-    while(*str != '\0')
-    {
-        if(*str==ch)
+        if(ch>=65 && ch<=90 || ch>=97 && ch<=122)
         {
            return true;  
         }
-        
-        *str++;
-    }
-    return false;
-        
+        else 
+        {
+            return false;
+        }       
 }
 
 int main()
 {
-    char Arr[20];
+    
     char cValue;
     bool bRet=0;
-
-    printf("Enter the String:");
-    scanf(" %[^\n]s",Arr);
 
     printf("Enter the character:");
     scanf(" %c",&cValue);
 
-    bRet=ChkChar(Arr,cValue);
+    bRet=ChkAlpha(cValue);
 
     if(bRet==true)
     {
-        printf("TRUE");
+        printf("Character is Alphabet");
     }
     else
     {
-        printf("FALSE");
+        printf("Character is Not Alphabet");
     }
 
     return EXIT_SUCCESS;
